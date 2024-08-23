@@ -1,0 +1,18 @@
+package com.pac;
+
+public class Print {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = 5; // Size of the square pattern
+
+        for (int r = 1; r <= n; r++) { // Iterate over rows
+            for (int c = 1; c <= n; c++) { // Iterate over columns
+                System.out.print("* "); // Print a star followed by a space
+            }
+            System.out.println(); // Move to the next line after printing each row
+        }
+
+	}
+
+}

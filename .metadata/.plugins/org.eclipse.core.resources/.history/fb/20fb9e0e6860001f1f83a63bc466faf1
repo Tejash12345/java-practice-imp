@@ -1,0 +1,22 @@
+package com.pac;
+
+public class Print {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = 5;
+		for (int r = 1; r <= n; r++) { // Iterate over rows
+            for (int c = 1; c <= n; c++) { // Iterate over columns
+                // Print a star if it's on the border or the first or last row/column
+                if (r == 1 || r == n || c == 1 || c == n) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  "); // Print space for inner part
+                }
+            }
+            System.out.println(); // Move to the next line after printing each row
+        }
+
+	}
+
+}
